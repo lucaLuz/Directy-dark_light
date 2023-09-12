@@ -1,0 +1,87 @@
+.frame {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.toggle_btn{
+    color: var(--texto);
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    bottom: 76px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.centro{
+    margin-top: 136px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.frame .overlap-group-wrapper {
+    overflow: hidden;
+}
+
+.overlap-group {
+    display: flex;
+    justify-content: center;
+}
+
+.fundo {
+    left: 0;
+    top: 0;
+}
+
+.p {
+    color: #0B2340;
+    font-size: 65px;
+    position: relative;
+    margin-right: 12%;
+    left: 10%;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 50%;
+}
+
+.nuven {
+    left: 0;
+    position: absolute;
+    top: 150px;
+}
+
+.imagens {
+    width: 50%;
+}
+
+.imagemdiv{
+    position: relative;
+    bottom: 90px;
+}
+
+.img {
+    height: 143px;
+    left: 0;
+    position: absolute;
+    top: 250px;
+    width: 143px;
+}
+
+.aviao {
+    left: 30%;
+    position: absolute;
+    top: 40%;
+    width: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .p{
+        font-size: 30px;
+    }
+}

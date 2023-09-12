@@ -1,0 +1,107 @@
+section{
+    margin-top: -10rem;
+}
+
+#hospedagem{
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#hospedagem h1{
+    font-weight: bold;
+    margin: 1.2rem 0 0.5rem;
+    color: var(--texto);
+    font-size: 50px;
+}
+
+.hospedagem__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 10%;
+}
+
+.hospedagem__item {
+    background: var(--cards);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid var( --cards);
+    transition: var(--transition);
+}
+
+.hospedagem__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.hospedagem__item h2 {
+    font-weight: bold;
+    margin: 1.2rem 0 0.5rem;
+    color: #0B2340;
+    font-size: 30px;
+}
+
+.hospedagem__item-cta {
+    margin-bottom: 1rem;
+}
+
+.hospedagem__item-cta p{
+    color: var(--texto);
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
+.hospedagem__item-cta h3{
+    font-size: 30px;
+    color: var(--texto);
+}
+
+.btn_card1{
+    font-weight: bold;
+    width: max-content;
+    display: inline-block;
+    color: var(--texto);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--amarelo);
+    background: var(--cards);
+    transition: var(--transition);
+}
+
+.btn_card1:hover{
+    background: var(--cards);
+    border: 2px solid transparent;
+}
+
+.btn-card2{
+    font-weight: bold;
+    width: max-content;
+    display: inline-block;
+    color: var(--cards);
+    background: var(--amarelo);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--amarelo);
+    transition: var(--transition);
+}
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:1024px) {
+    .hospedagem__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/*============================================================ MEDIA QUERYES ================================================*/
+
+@media screen and (max-width:600px) {
+    .hospedagem__container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+}
